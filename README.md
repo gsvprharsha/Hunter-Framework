@@ -1,7 +1,7 @@
 <p align="center">
   <img alt="Logo" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/Hunter-Framework.png?raw=true"><br>
   <img alt="Maintained" src="https://img.shields.io/maintenance/yes/2021?style=for-the-badge">
-  
+  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/gsvprharsha/Hunter-Framework?style=for-the-badge">
 </p>
 
 ## About Hunter
@@ -15,7 +15,7 @@
 More tools are to be added very soon. </b>
 
 ## Tested On
-<p>
+<p align="center">
   <img alt="manjaro" src="https://img.shields.io/badge/manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white">
   <img alt="Kali Linux" src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white">
   <img alt="BlackArch" src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white">
