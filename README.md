@@ -69,3 +69,7 @@ python3 hunter.py
 ## Features (as of 31/12/2021)
 <li>5 tools in one</li>
 <li>Port Scanner accepts URLs</li>
+
+## Contributors
+<li><a href="https://github.com/Yash2262">Yash2262</a></li>
+<li><a href="https://github.com/dkhatri05">dkhatri05</a></li>
