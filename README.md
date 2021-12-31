@@ -1,7 +1,8 @@
 <p align="center">
-  <img alt="Logo" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/Hunter-Framework.png?raw=true"><br>
+  <img alt="Logo" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/Hunter-Framework.png?raw=true"><br><br>
   <img alt="Maintained" src="https://img.shields.io/maintenance/yes/2021?style=for-the-badge">
   <img alt="Repo Size" src="https://img.shields.io/github/repo-size/gsvprharsha/Hunter-Framework?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/github/license/gsvprharsha/Hunter-Framework?color=light&style=for-the-badge">
 </p>
 
 ## About Hunter
