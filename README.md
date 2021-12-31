@@ -47,9 +47,9 @@ chmod +x setup.sh
 python3 hunter.py
 ```
 
-<li>You should be greeted with the following screen</li>
+<li>You should be greeted with the following screen</li><br>
 <p align="center">
-  <img alt="Welcome Screen" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/Hunter-Welcome-Screen.png?raw=true">
+  <img alt="Welcome Screen" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/Hunter-Welcome-Screen.jpeg?raw=true">
 </p>
 
 
