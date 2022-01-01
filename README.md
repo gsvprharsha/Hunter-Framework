@@ -70,7 +70,8 @@ python3 hunter.py
 
 ## Features (as of 31/12/2021)
 <li>5 tools in one</li>
-<li>Port Scanner accepts URLs</li>
+<li>Port Scanner accepts URLs and multiple targets</li>
+<li>You may add your own set of wordlists to the existing ones.</li>
 
 ## Contributors
 <li><a href="https://github.com/Yash2262">Yash2262</a></li>
