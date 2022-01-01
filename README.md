@@ -32,7 +32,8 @@ More tools are to be added very soon. </b>
 <b> Hunter aims to be a begineer friendly framework. Using Hunter does not require any advanced skills, but you need to be familiar with some of the terminologies of penetration testing.</b>
 
 ## Installation
-<b> Follow the below steps to run Hunter without any issues on your device</b>
+<b>Note: <br>Make sure to run the framework in root user. Hunter requires some permissions, which are only available to the root user</b><br>
+<b> Follow the below steps to run Hunter without any issues on your device.</b>
 <li>Open your terminal and clone this repository using the following command</li><br>
 
 ```
