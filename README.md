@@ -27,7 +27,7 @@ More tools are to be added very soon. </b>
 
 
 ## Contributing
-<b>Thank you so much for considering to contribute to the Project. Place a pull request and if feasible it will be merged into the main branch of this repository</b>
+<b>Thank you so much for considering to contribute to the Project. Place a pull request and if feasible it will be merged into the main branch of this repository.</b>
 
 ## Using Hunter
 <b> Hunter aims to be a begineer friendly framework. Using Hunter does not require any advanced skills, but you need to be familiar with some of the terminologies of penetration testing.</b>
