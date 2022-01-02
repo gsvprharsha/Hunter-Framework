@@ -7,7 +7,6 @@ import scapy.all as scapy
 from scapy.layers import http
 import time
 import sys
-from pip._vendor.distlib.compat import raw_input
 
 def lame_arp_spoofer():
     def get_mac(ip):
@@ -31,8 +30,8 @@ def lame_arp_spoofer():
       scapy.send(packet, count=4, verbose=False)
 
     subprocess.call("echo 1 > /proc/sys/net/ipv4/ip_forward", shell=True)
-    target_ip = raw_input("Target Ip: ")
-    gateway_ip = raw_input("Gateway IP: ")
+    target_ip = input("Target Ip: ")
+    gateway_ip = input("Gateway IP: ")
 
     try:
       sent_packet_count = 0
