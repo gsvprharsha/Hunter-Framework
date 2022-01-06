@@ -6,6 +6,8 @@
   <img alt="License" src="https://img.shields.io/github/license/gsvprharsha/Hunter-Framework?color=light&style=for-the-badge">
 </p>
 
+## Important Note
+<b>This tool is for educational and ethical practices only. The developers are not responsible if the tool is misused by an individual</b>
 ## About Hunter
 <b>Hunter is a penetration testing framework for ethical hackers to use in their tests. As of now, Hunter consists of 5 different tools for the user. The tools are listed as follows:
   <li>Port Scanner</li>
