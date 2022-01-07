@@ -3,6 +3,7 @@
 # Still under development.....Feel free to contribute to this repo
 
 import scapy.all as scapy
+from pip._vendor.distlib.compat import raw_input
 import optparse
 
 def get_arguments():
@@ -28,5 +29,6 @@ def print_result(result_list):
     for client in result_list:
         print(client["ip"]+ "\t\t" + client["MAC"])
 
-scan_result = scan("10.0.2.1/24")
+user_input_range = raw_input("[+] Network Range to scan for: ")
+scan_result = scan(user_input_range)
 print_result(scan_result)
