@@ -72,7 +72,7 @@ python3 hunter.py
 
 <li>Now you may choose your option and hit enter, which would ask you input regaring the target, gateway,...etc</li>
 
-## Features (as of 31/12/2021)
+## Features (as of 08/01/2022)
 <li>5 tools in one</li>
 <li>Port Scanner accepts URLs and multiple targets</li>
 <li>You may add your own set of wordlists to the existing ones.</li>
