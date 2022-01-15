@@ -22,6 +22,7 @@ print(termcolor.colored("\nNote: Run this tool as ROOT User as it needs superuse
 print(termcolor.colored("1] Port Scanner \t\t\t 2] SSH Bruteforce", 'green', attrs=['bold']))
 print(termcolor.colored("3] ARP Spoof \t\t\t\t 4] Backdoor", 'green', attrs=['bold']))
 print(termcolor.colored("5] Password Cracker \t\t\t 6] Network Scanner\n", 'green', attrs=['bold']))
+print(termcolor.colored("7] MAC Changer\n", 'green', attrs=['bold']))
 print(termcolor.colored("[=] Press 0 to exit\n",'magenta', attrs=['bold']))
 option = input("Choose an Option: ")
 
@@ -40,3 +41,5 @@ elif option =="5":
     os.system("sudo python3 cracker-password.py")
 elif option =="6":
     os.system("sudo python3 networkscanner.py")
+elif option =="7":
+    os.system("sudo python3 macchanger.py")
