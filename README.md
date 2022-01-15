@@ -72,8 +72,8 @@ python3 hunter.py
 
 <li>Now you may choose your option and hit enter, which would ask you input regaring the target, gateway,...etc</li>
 
-## Features (as of 08/01/2022)
-<li>6 tools in one.</li>
+## Features (as of 15/01/2022)
+<li>7 tools in one.</li>
 <li>Port Scanner accepts URLs and multiple targets.</li>
 <li>You may add your own set of wordlists to the existing ones.</li>
 <li>A network mapper that shows MAC and IP addressess.</li>
