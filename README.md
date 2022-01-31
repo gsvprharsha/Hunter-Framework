@@ -19,6 +19,14 @@
   
 More tools are to be added very soon. </b>
 
+## Features (as of 31/01/2022)
+<li>Access it from anywhere by typing "sudo hunter"</li>
+<li>6 tools in one.</li>
+<li>Port Scanner accepts URLs and multiple targets.</li>
+<li>You may add your own set of wordlists to the existing ones using wordlist generator.</li>
+<li>A network mapper that shows MAC and IP addressess.</li>
+
+
 ## Tested On
 <p align="center">
   <img alt="manjaro" src="https://img.shields.io/badge/manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white">
@@ -72,9 +80,3 @@ python3 hunter.py
 </p>
 
 <li>Now you may choose your option and hit enter, which would ask you input regaring the target, gateway,...etc</li>
-
-## Features (as of 31/01/2022)
-<li>6 tools in one.</li>
-<li>Port Scanner accepts URLs and multiple targets.</li>
-<li>You may add your own set of wordlists to the existing ones using wordlist generator.</li>
-<li>A network mapper that shows MAC and IP addressess.</li>
