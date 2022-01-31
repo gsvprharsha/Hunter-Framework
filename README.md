@@ -77,7 +77,3 @@ python3 hunter.py
 <li>Port Scanner accepts URLs and multiple targets.</li>
 <li>You may add your own set of wordlists to the existing ones.</li>
 <li>A network mapper that shows MAC and IP addressess.</li>
-
-## Contributors
-<li><a href="https://github.com/Yash2262">Yash2262</a></li>
-<li><a href="https://github.com/dkhatri05">dkhatri05</a></li>
