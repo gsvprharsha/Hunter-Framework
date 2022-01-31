@@ -80,3 +80,10 @@ python3 hunter.py
 </p>
 
 <li>Now you may choose your option and hit enter, which would ask you input regaring the target, gateway,...etc</li>
+
+## What to expect in future updates
+<li>A anonymizing script</li>
+<li>An ARP Spoofer</li>
+<li>An Email Bomber</li>
+<li>Rootkit Generator</li>
+And many more tools to come. If you are into building tools, then do contribute to the project.
