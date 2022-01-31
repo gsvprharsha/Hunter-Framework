@@ -1,45 +1,97 @@
-#!usr/bin/env python
-import subprocess
-import paramiko
-import arp_spoofer
-#from pip._vendor.distlib.compat import raw_input
-import os
+#!/usr/bin/env python
 import termcolor
-import manager
-import portscanner
-
-os.system("clear")
-print(" ")
-print(termcolor.colored("The ",'red', attrs=['bold']))
-print(termcolor.colored("██╗  ██╗██╗   ██╗███╗  ██╗████████╗███████╗██████╗ ",'red'))
-print(termcolor.colored("██║  ██║██║   ██║████╗ ██║╚══██╔══╝██╔════╝██╔══██╗",'red'))
-print(termcolor.colored("███████║██║   ██║██╔██╗██║   ██║   █████╗  ██████╔╝",'red'))
-print(termcolor.colored("██╔══██║██║   ██║██║╚████║   ██║   ██╔══╝  ██╔══██╗",'red'))
-print(termcolor.colored("██║  ██║╚██████╔╝██║ ╚███║   ██║   ███████╗██║  ██║",'red'))
-print(termcolor.colored("╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝ Script V1.0",'red'))
-print(" ")
-print(termcolor.colored("\nNote: Run this tool as ROOT User as it needs superuser permissions.", 'yellow', attrs=['bold']))
-print(termcolor.colored("1] Port Scanner \t\t\t 2] SSH Bruteforce", 'green', attrs=['bold']))
-print(termcolor.colored("3] ARP Spoof \t\t\t\t 4] Backdoor", 'green', attrs=['bold']))
-print(termcolor.colored("5] Password Cracker \t\t\t 6] Network Scanner\n", 'green', attrs=['bold']))
-print(termcolor.colored("7] MAC Changer\n", 'green', attrs=['bold']))
-print(termcolor.colored("[=] Press 0 to exit\n",'magenta', attrs=['bold']))
-option = input("Choose an Option: ")
+import sys
+import os
+import os.path
+import time
+from scripts.cracker import hunter_cracker
+from scripts.manager import hunter_server
+from scripts.networkmapper import hunter_network_scanner
+from scripts.portscanner import hunter_open_ports
+from scripts.sshthreaded import hunter_ssh
+from scripts.wordlistgenerator import hunter_wordlist_generator
 
 
-if option == "0":
-    os.system("exit")
-elif option == "1":
-    portscanner.lame_open_ports()
-elif option =="2":
-    os.system("sudo python3 main.py")
-elif option =="3":
-    arp_spoofer.lame_arp_spoofer()
-elif option =="4":
-    manager.lame_server()
-elif option =="5":
-    os.system("sudo python3 cracker-password.py")
-elif option =="6":
-    os.system("sudo python3 networkscanner.py")
-elif option =="7":
-    os.system("sudo python3 macchanger.py")
+def main():
+    def banner():
+        os.system("clear")
+        print(" ")
+        print(termcolor.colored("\t\t██╗  ██╗██╗   ██╗███╗  ██╗████████╗███████╗██████╗ ",'red'))
+        print(termcolor.colored("\t\t██║  ██║██║   ██║████╗ ██║╚══██╔══╝██╔════╝██╔══██╗",'red'))
+        print(termcolor.colored("\t\t███████║██║   ██║██╔██╗██║   ██║   █████╗  ██████╔╝",'red'))
+        print(termcolor.colored("\t\t██╔══██║██║   ██║██║╚████║   ██║   ██╔══╝  ██╔══██╗",'red'))
+        print(termcolor.colored("\t\t██║  ██║╚██████╔╝██║ ╚███║   ██║   ███████╗██║  ██║",'red'))
+        print(termcolor.colored("\t\t╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝",'red'))
+        print(" ")
+        print(termcolor.colored("\tNote: Run this tool as ROOT User as it needs superuser permissions.", 'yellow', attrs=['bold']))
+        print(termcolor.colored("\t1] Port Scanner \t\t\t 2] SSH Bruteforce", 'green', attrs=['bold']))
+        print(termcolor.colored("\t3] Backdoor \t\t\t\t 4] Password Cracker", 'green', attrs=['bold']))
+        print(termcolor.colored("\t5] Network Scanner \t\t\t 6] Wordlist Generator", 'green', attrs=['bold']))
+        #print(termcolor.colored("\t7] ", 'green', attrs=['bold']))
+        print(termcolor.colored("\n\t[=] Press 0 to exit\n",'magenta', attrs=['bold']))
+
+    username = os.getlogin()
+    global hunterframework
+    hunterframework = termcolor.colored('[','yellow', attrs=['bold'])+ termcolor.colored('Hunter','red', attrs=['bold'])+ termcolor.colored(']-','yellow', attrs=['bold'])+termcolor.colored('[','yellow', attrs=['bold'])+termcolor.colored(username,'red', attrs=['bold'])+termcolor.colored(']> ','yellow', attrs=['bold'])
+
+
+    def menu():
+        banner()
+        menu = input(hunterframework)
+        if menu == "1":
+            hunter_open_ports()
+            print(termcolor.colored('\nHit enter to continue using the tool ','green',attrs=['bold']) + termcolor.colored('or','blue',attrs=['bold']) + termcolor.colored(' Hit CTRL + C to exit......\n','red', attrs=['bold']))
+            input()
+            back()
+        elif menu == "2":
+            hunter_ssh()
+            print(termcolor.colored('\nHit enter to continue using the tool ','green',attrs=['bold']) + termcolor.colored('or','blue',attrs=['bold']) + termcolor.colored(' Hit CTRL + C to exit......\n','red', attrs=['bold']))
+            input()
+            back()
+        elif menu == "3":
+            hunter_server()
+            print(termcolor.colored('\nHit enter to continue using the tool ','green',attrs=['bold']) + termcolor.colored('or','blue',attrs=['bold']) + termcolor.colored(' Hit CTRL + C to exit......\n','red', attrs=['bold']))
+            input()
+            back()
+        elif menu == "4":
+            hunter_cracker()
+            print(termcolor.colored('\nHit enter to continue using the tool ','green',attrs=['bold']) + termcolor.colored('or','blue',attrs=['bold']) + termcolor.colored(' Hit CTRL + C to exit......\n','red', attrs=['bold']))
+            input()
+            back()
+        elif menu == "5":
+            hunter_network_scanner()
+            print(termcolor.colored('\nHit enter to continue using the tool ','green',attrs=['bold']) + termcolor.colored('or','blue',attrs=['bold']) + termcolor.colored(' Hit CTRL + C to exit......\n','red', attrs=['bold']))
+            input()
+            back()
+        elif menu == "6":
+            hunter_wordlist_generator()
+            print("Wordlist Generated and saved in passwords.txt")
+            print(termcolor.colored('\nHit enter to continue using the tool ','green',attrs=['bold']) + termcolor.colored('or','blue',attrs=['bold']) + termcolor.colored(' Hit CTRL + C to exit......\n','red', attrs=['bold']))
+            input()
+            back()
+        elif menu == 'clear':
+            os.system('clear')
+            back()
+        elif menu == "":
+            print(termcolor.colored('\nNo input detected...Press ','red',attrs=['bold']) + termcolor.colored('Enter','green',attrs=['bold']) + termcolor.colored(' to continue\n','red', attrs=['bold']))
+            input()
+            back()
+        elif menu == "0":
+            sys.exit()
+        else:
+            print("\n" + termcolor.colored(menu, 'green', attrs=['bold'])+termcolor.colored(' Is wrong Input! Please enter a valid option/command....', 'red', attrs=['bold']))
+            time.sleep(2)
+            back()
+
+    def back():
+        menu()
+
+    while menu():
+        menu()
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        print(termcolor.colored("\n\n[-]Exiting......", 'red', attrs=['bold']))
+        sys.exit()
