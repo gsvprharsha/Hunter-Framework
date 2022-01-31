@@ -12,9 +12,10 @@
 <b>Hunter is a penetration testing framework for ethical hackers to use in their tests. As of now, Hunter consists of 5 different tools for the user. The tools are listed as follows:
   <li>Port Scanner</li>
   <li>SSH Bruteforce</li>
-  <li>ARP Spoof</li>
   <li>Backdoor Manager</li>
-  <li>Password Cracker</li><br>
+  <li>Password cracker</li>
+  <li>Network Scanner</li>
+  <li>Wordlist Generator</li><br>
   
 More tools are to be added very soon. </b>
 
