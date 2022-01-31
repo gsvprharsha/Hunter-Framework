@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Logo" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/Hunter-Framework.png?raw=true"><br><br>
+  <img alt="Logo" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/imgs/Hunter-Framework.png"><br><br>
   <img alt="Maintained" src="https://img.shields.io/maintenance/yes/2022?style=for-the-badge">
   <img alt="Languages" src="https://img.shields.io/github/languages/count/gsvprharsha/Hunter-Framework?style=for-the-badge">
   <img alt="Repo Size" src="https://img.shields.io/github/repo-size/gsvprharsha/Hunter-Framework?style=for-the-badge">
@@ -67,7 +67,7 @@ python3 hunter.py
 
 <li>You should be greeted with the following screen</li><br>
 <p align="center">
-  <img alt="Welcome Screen" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/Hunter-Welcome-Screen.jpeg?raw=true">
+  <img alt="Welcome Screen" src="https://github.com/gsvprharsha/Hunter-Framework/blob/main/imgs/Hunter%20Welcome%20Screen.png">
 </p>
 
 <li>Now you may choose your option and hit enter, which would ask you input regaring the target, gateway,...etc</li>
