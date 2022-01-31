@@ -69,7 +69,7 @@ chmod +x setup.sh
 <li>To run the framework, type the following command in your terminal</li><br>
 
 ```
-python3 hunter.py
+sudo hunter
 ```
 
 <li>You should be greeted with the following screen</li><br>
