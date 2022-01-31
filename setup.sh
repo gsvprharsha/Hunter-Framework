@@ -24,7 +24,12 @@ pip3 install pyautogui
 echo " "
 pip3 install termcolor
 echo " "
-echo -e "${GREEN}[+] Dependencies are installed${NC}."
+cp hunter /usr/bin/hunter
+chmod +x /usr/bin/hunter
+mkdir /usr/bin/scripts
+cp -r ./scripts/* /usr/bin/scripts/
+echo -e "${GREEN}[+] Hunter Successfully Installed.....Type (sudo hunter) in your terminal to check...${NC}"
+
 
 fi
 
