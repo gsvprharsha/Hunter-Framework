@@ -32,4 +32,3 @@ echo -e "${GREEN}[+] Hunter Successfully Installed.....Type (sudo hunter) in you
 
 
 fi
-
