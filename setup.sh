@@ -10,7 +10,7 @@ if [ "$EUID" -ne 0 ]
   echo " "
   exit
 else
-echo -e "${GREEN}[+] Installing Dependencies for ${NC}${RED}Hunter Pentesting Framework${NC}"
+echo -e "${GREEN}[+] Installing Dependencies for Hunter Pentesting Framework${NC}"
 echo " "
 pip3 install sockets
 echo " "
